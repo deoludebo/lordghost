@@ -5,3 +5,5 @@
 * [x] added links to sokoto, adamawa, bauchi, taraba, zamfara
 
 * [x] added secretariat and partners page
+
+* [x] adjusted news sidebar

@@ -41,6 +41,16 @@
     $governors_table .= '<div class="speaker-item"><div class="speaker-item-img"><a target="_blank" href="governors.php?id=' . $row["id"] . '"><img class="lazy" src="' . $row["picture"] . '" alt="img" style="display: block;"></a></div><div class="speaker-item-content"><h3>' . $row["name"] . '</h3><div class="prof"><h5>' . $row["post"] . '</h5></div><div class="prof">' . $row["title"] . '</div><p>' . $row["bio"] . '</p><ul class="soc-link">' . $social_links . '</ul></div></div>';
   }
 
+  $result = $conn -> query("SELECT * FROM news WHERE featured=1 ORDER BY date DESC LIMIT 6");
+  $news_sidebar = "";
+  while($row = $result -> fetch_assoc()) {
+    $news_sidebar .= '<li>
+      <div class="item-thumbnail">
+        <a href="news.php?news=' . $row["id"] . '" target="_blank"> <img alt="' . $row["title"] . '" class="circle" src="' . $row["image"] . '" title="' . $row["title"] . '" border="0" width="72"> </a> <span class="title"><a title=" " href="href="news.php?news=' . $row["id"] . '">' . $row["title"] . '</a></span> </div>
+      <div style="clear: both;"></div>
+    </li>';
+  }
+
   $result = $conn -> query("SELECT * FROM news ORDER BY date DESC LIMIT 10");
   $news_table = "";
   while($row = $result -> fetch_assoc()) {
@@ -59,21 +69,16 @@
           </div>
       </div>
 	</div>';
-	
 
-	
   }
- 
-
-	
 
   $conn->close();
 ?>
 
 	<!--==================== MAIN-TWO ====================-->
-	<section class="main-two">
-	<div class="row">
-				<div class="col-12 col-md-8">
+	<section class="main-two" class="carousel" aria-label="Gallery">
+	<div class="row justify-content-center">
+	<div class="col-lg-8">
 		<div class="main-slider-two">
 			<div class="main-slide-two">
 				<div class="main-slide-date">January 17</div>
@@ -130,75 +135,21 @@
 			</div>
 		</div>
 </div>
-<div class="col-12 col-sm-3">
+<div class="col-lg-4">
 <div class="widget-content popular-posts">
   <ul>
-    <li>
-      <div class="item-thumbnail">
-        <a title="" href="http://www.fostrap.com/2016/04/free-material-design-template-blogger-md-fostrap.html" target="_blank"> <img alt="(New Update) Free Material Design Template Blogger - MDFostrap" class="circle" src="https://2.bp.blogspot.com/-FF3UZkrY-ME/VwLGWIjIUzI/AAAAAAAAB3E/81FW7OvXAOcPUJl0ZDfDMV2VyIVGTSoAw/s72-c/cover.jpg" title="(New Update) Free Material Design Template Blogger - MDFostrap" border="0" height="72" width="72"> </a> <span class="title"><a title=" " href="http://www.fostrap.com/2016/04/free-material-design-template-blogger-md-fostrap.html">(New Update) Free Material Design Template Blogger - MDFostrap</a></span> </div>
-      <div style="clear: both;"></div>
-    </li>
-    <li>
-      <div class="item-thumbnail">
-        <a title=" " href="http://www.fostrap.com/2016/02/awesome-material-design-responsive-menu.html" target="_blank"> <img alt="Simple Material Design Responsive Menu with HTML+CSS no Javascript" class="circle" src="https://3.bp.blogspot.com/-bAsTyYC8U80/VtLZRKN6OlI/AAAAAAAABjY/kAoljiMALkQ/s72-c/material%2Bnavbar.jpg" title="Simple Material Design Responsive Menu with HTML+CSS no Javascript" border="0" height="72" width="72"> </a> <span class="title"><a title=" " href="http://www.fostrap.com/2016/02/awesome-material-design-responsive-menu.html">Simple Material Design Responsive Menu with HTML+CSS no Javascript</a></span> </div>
-      <div style="clear: both;"></div>
-    </li>
-    <li>
-      <div class="item-thumbnail">
-        <a title=" " href="http://www.fostrap.com/2016/04/documentation-mdfostrap-material-design-template-blogger.html" target="_blank"> <img alt="(Documentation) MDFostrap Material Design Template Blogger" class="circle" src="https://1.bp.blogspot.com/-AF7WpBRlk8s/VwumhEkvTnI/AAAAAAAAB6g/q9sb42e9Sq03sBL04gfraLdg0arBfUZXQ/s72-c/mdfostrap-made-by-materializecss.jpg" title="(Documentation) MDFostrap Material Design Template Blogger" border="0" height="72" width="72"> </a> <span class="title"><a title=" " href="http://www.fostrap.com/2016/04/documentation-mdfostrap-material-design-template-blogger.html">(Documentation) MDFostrap Material Design Template Blogger</a></span> </div>
-      <div style="clear: both;"></div>
-    </li>
-    <li>
-      <div class="item-thumbnail">
-        <a title=" " href="http://www.fostrap.com/2016/05/material-design-button-ripple-effect.html" target="_blank"> <img alt="Material Design Button Ripple Effect Code Snippet" class="circle" src="https://2.bp.blogspot.com/-GvwkkFdRYP4/VymettBey1I/AAAAAAAAB-k/HKslJgqVK_oQwt1ef9jmr1P0AKAkeEgHQCLcB/s72-c/cover.jpg" title="Material Design Button Ripple Effect Code Snippet" border="0" height="72" width="72"> </a> <span class="title"><a title=" " href="http://www.fostrap.com/2016/05/material-design-button-ripple-effect.html">Material Design Button Ripple Effect Code Snippet</a></span> </div>
-      <div style="clear: both;"></div>
-    </li>
-    <li>
-      <div class="item-thumbnail">
-        <a title=" " href="http://www.fostrap.com/2016/03/bootstrap-responsive-material-design.html" target="_blank"> <img alt="Bootstrap Responsive Material Design Card" class="circle" src="https://4.bp.blogspot.com/-gCE-gBljBOk/Vt0Wc-l-F8I/AAAAAAAABsA/vTJh_lfSx3U/s72-c/cover.jpg" title="Bootstrap Responsive Material Design Card" border="0" height="72" width="72"> </a> <span class="title"><a title=" " href="http://www.fostrap.com/2016/03/bootstrap-responsive-material-design.html">Bootstrap Responsive Material Design Card</a></span> </div>
-      <div style="clear: both;"></div>
-    </li>
-    <li>
-      <div class="item-thumbnail">
-        <a title="" href="http://www.fostrap.com/2016/04/free-material-design-template-blogger-md-fostrap.html" target="_blank"> <img alt="(New Update) Free Material Design Template Blogger - MDFostrap" class="circle" src="https://2.bp.blogspot.com/-FF3UZkrY-ME/VwLGWIjIUzI/AAAAAAAAB3E/81FW7OvXAOcPUJl0ZDfDMV2VyIVGTSoAw/s72-c/cover.jpg" title="(New Update) Free Material Design Template Blogger - MDFostrap" border="0" height="72" width="72"> </a> <span class="title"><a title=" " href="http://www.fostrap.com/2016/04/free-material-design-template-blogger-md-fostrap.html">(New Update) Free Material Design Template Blogger - MDFostrap</a></span> </div>
-      <div style="clear: both;"></div>
-    </li>
-    <li>
-      <div class="item-thumbnail">
-        <a title=" " href="http://www.fostrap.com/2016/02/awesome-material-design-responsive-menu.html" target="_blank"> <img alt="Simple Material Design Responsive Menu with HTML+CSS no Javascript" class="circle" src="https://3.bp.blogspot.com/-bAsTyYC8U80/VtLZRKN6OlI/AAAAAAAABjY/kAoljiMALkQ/s72-c/material%2Bnavbar.jpg" title="Simple Material Design Responsive Menu with HTML+CSS no Javascript" border="0" height="72" width="72"> </a> <span class="title"><a title=" " href="http://www.fostrap.com/2016/02/awesome-material-design-responsive-menu.html">Simple Material Design Responsive Menu with HTML+CSS no Javascript</a></span> </div>
-      <div style="clear: both;"></div>
-    </li>
-    <li>
-      <div class="item-thumbnail">
-        <a title=" " href="http://www.fostrap.com/2016/04/documentation-mdfostrap-material-design-template-blogger.html" target="_blank"> <img alt="(Documentation) MDFostrap Material Design Template Blogger" class="circle" src="https://1.bp.blogspot.com/-AF7WpBRlk8s/VwumhEkvTnI/AAAAAAAAB6g/q9sb42e9Sq03sBL04gfraLdg0arBfUZXQ/s72-c/mdfostrap-made-by-materializecss.jpg" title="(Documentation) MDFostrap Material Design Template Blogger" border="0" height="72" width="72"> </a> <span class="title"><a title=" " href="http://www.fostrap.com/2016/04/documentation-mdfostrap-material-design-template-blogger.html">(Documentation) MDFostrap Material Design Template Blogger</a></span> </div>
-      <div style="clear: both;"></div>
-    </li>
-    <li>
-      <div class="item-thumbnail">
-        <a title=" " href="http://www.fostrap.com/2016/05/material-design-button-ripple-effect.html" target="_blank"> <img alt="Material Design Button Ripple Effect Code Snippet" class="circle" src="https://2.bp.blogspot.com/-GvwkkFdRYP4/VymettBey1I/AAAAAAAAB-k/HKslJgqVK_oQwt1ef9jmr1P0AKAkeEgHQCLcB/s72-c/cover.jpg" title="Material Design Button Ripple Effect Code Snippet" border="0" height="72" width="72"> </a> <span class="title"><a title=" " href="http://www.fostrap.com/2016/05/material-design-button-ripple-effect.html">Material Design Button Ripple Effect Code Snippet</a></span> </div>
-      <div style="clear: both;"></div>
-    </li>
-    <li>
-      <div class="item-thumbnail">
-        <a title=" " href="http://www.fostrap.com/2016/03/bootstrap-responsive-material-design.html" target="_blank"> <img alt="Bootstrap Responsive Material Design Card" class="circle" src="https://4.bp.blogspot.com/-gCE-gBljBOk/Vt0Wc-l-F8I/AAAAAAAABsA/vTJh_lfSx3U/s72-c/cover.jpg" title="Bootstrap Responsive Material Design Card" border="0" height="72" width="72"> </a> <span class="title"><a title=" " href="http://www.fostrap.com/2016/03/bootstrap-responsive-material-design.html">Bootstrap Responsive Material Design Card</a></span> </div>
-      <div style="clear: both;"></div>
-    </li>
+    <?php
+      echo $news_sidebar;
+    ?>
   </ul>
 </div>
 <div>
-<a href="news.php"><h2 class="title-line-left color:green;">FEATURED</h2></a>
-
-					<div class="">
-					
-					<?php
-          
-        ?>
-					</div>
+<a href="news.php"><h2 class="title-line-left color:green;">FEATURED POSTS</h2></a>
 				</div>
 </div>
 	</section>
-	
-	
+
+
 	<!--==================== S-ABOUT ====================-->
 	<section class="s-about-home-two">
 		<div class="container">

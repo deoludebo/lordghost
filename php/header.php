@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/popular.css">
+	<link rel="stylesheet" href="assets/css/carousel.css">
 </head>
 
 <body id="home" class="version-2" style="background-color: #fff;">
