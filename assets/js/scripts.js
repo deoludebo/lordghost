@@ -203,7 +203,7 @@
 			prevArrow: '<span class="slick-arrow-prev"><i class="fas fa-caret-left"></i></span>',
 			appendArrows: $('.main-slide-arrow'),
 			autoplay: true,
-			autoplaySpeed: 4500,
+			autoplaySpeed: 1500,
 			responsive: [
 			{
 				breakpoint: 768,
