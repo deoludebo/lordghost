@@ -15,3 +15,5 @@
 * [x] added vice chairman page
 
 * [x] added partners
+
+* [x] added state logos
