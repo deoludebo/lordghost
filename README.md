@@ -11,3 +11,5 @@
 * [x] added states to footer
 
 * [x] added chairman page
+
+* [x] added vice chairman page
