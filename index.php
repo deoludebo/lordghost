@@ -41,7 +41,8 @@
     $governors_table .= '<div class="speaker-item"><div class="speaker-item-img"><a target="_blank" href="governors.php?id=' . $row["id"] . '"><img class="lazy" src="' . $row["picture"] . '" alt="img" style="display: block;"></a></div><div class="speaker-item-content"><h3>' . $row["name"] . '</h3><div class="prof"><h5>' . $row["post"] . '</h5></div><div class="prof">' . $row["title"] . '</div><p>' . $row["bio"] . '</p><ul class="soc-link">' . $social_links . '</ul></div></div>';
   }
 
-  $result = $conn -> query("SELECT * FROM news WHERE featured=1 ORDER BY date DESC LIMIT 6");
+  // $result = $conn -> query("SELECT * FROM news WHERE featured=1 ORDER BY date DESC LIMIT 6");
+  $result = $conn -> query("SELECT * FROM news ORDER BY date DESC LIMIT 6");
   $news_sidebar = "";
   while($row = $result -> fetch_assoc()) {
     $news_sidebar .= '<li>

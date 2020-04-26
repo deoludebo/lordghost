@@ -24,23 +24,25 @@
 	<section class="our-speakers">
 		<div class="container">
 
-			<div class="our-speakers-cover">
-				<div class="speaker-item">
-					<div class="speaker-item-img">
-						<img src="assets/img/dg.jpg" alt="img">
-					</div>
-					<div class="speaker-item-content">
-						<h3>Lorem ipsum dolor sit amet</h3>
-						<div class="prof">The Secretariat PDP Governors' Forum</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-
-					</div>
+			<div class="our-speakers-cover row justify-content-center">
+				<div class="speaker-item col-lg-10">
+          <img src="assets/img/ConferenceRoom.jpg" alt="img" width="100%">
 				</div>
-				<div class="speaker-item col-lg-6">
-
-					<div>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>
+				<div class="col-lg-10">
+          <br><br>The Secretariat is the technical and administrative arm of the Nigeria Governors’ Forum, which oversees the daily operations of the Forum, giving direction and focus to the NGF by effectively engaging partners and stakeholders. It is a Policy Hub that provides administrative, research and technical support to the Forum in carrying out its strategic objectives. The Secretariat is also a Resource Centre that provides reliable and current information in relevant areas of policy making for the Forum.
+          In 2009, in the wake of the emergence of Dr. Abubakar Bukola Saraki as Chairman of the Forum, the Secretariat went through a major restructuring, and re-positioned into an effective and functional policy hub, better able to drive the agenda of the Forum. The Secretariat’s capacity as the technical support engine and vehicle of NGF activities has evolved considerably over time.  <br><br>
+          The Secretariat is headed by a Director General and supported by two Executive Directors in charge of Administration and Finance and Strategy and Research respectively. With the support of International Development Partners, the Secretariat has gradually evolved into a policy think-tank as well as a one-stop resource centre for the 36 States of Nigeria. The Secretariat has continued to increase its capacity to:
+              <ul><br><li>⬤ Deepen its policy conception functions</li><li>
+              ⬤ Ensure timely, reliable rendition of accurate data and research materials to the Forum</li><li>
+              ⬤ Proactively build the capacity of state actors to ensure better service delivery at the sub-national level.</li></ul>
+          <br>The policy areas include:
+          <ul><li>
+          1. Economic Research and Advisory</li><li>
+          2. State Peer Review Mechanism</li><li>
+          3. Policy Advisory</li><li>
+          4. Public Financial Management and Development Policy Operations</li><li>
+          5. Polio Eradication Initiative/Routine Immunization</li><li>
+          6. Knowledge Management</li></ul>
 				</div>
 			</div>
 		</div>
