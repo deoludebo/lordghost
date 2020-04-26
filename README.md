@@ -7,3 +7,7 @@
 * [x] added secretariat and partners page
 
 * [x] adjusted news sidebar
+
+* [x] added states to footer
+
+* [x] added chairman page
