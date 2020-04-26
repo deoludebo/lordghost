@@ -187,14 +187,6 @@
 							</ul>
 						</li>
 						<!--========== WIDGET-RECENT-POSTS END ==========-->
-						<!--=========== WIDGET-INSTAGRAM ===========-->
-						<li class="widget widget-instagram">
-							<h6 class="title">Gallery</h6>
-							<ul>
-								<?php echo $gallery_table; ?>
-							</ul>
-						</li>
-						<!--=========== WIDGET-INSTAGRAM END ===========-->
 						<!--=========== WIDGET-NEWSLETTER ===========-->
 						<li class="widget widget-newsletter">
 							<h6 class="title">newsletter</h6>

@@ -321,7 +321,7 @@ header {
 
 .nav-list li {
   display: block;
-  
+
   position: relative
 }
 
@@ -1533,9 +1533,6 @@ footer h6 {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end
 }
 
 .insta-list-cover h6 {
@@ -1556,49 +1553,17 @@ footer h6 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-left: -7px;
-  max-width: 342px;
   width: 100%
 }
 
 .insta-list li {
-  width: 33.33%;
+  width: 20%;
   padding: 7px
 }
 
 .insta-list li a {
   display: block;
   position: relative
-}
-
-.insta-list li a:before {
-  content: '+';
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0);
-  transform: translate(-50%, -50%) scale(0);
-  color: #fff;
-  z-index: 2;
-  font-weight: 500;
-  font-size: 30px;
-  -webkit-transition: .3s ease;
-  transition: .3s ease
-}
-
-.insta-list li a:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #07923c;
-  z-index: 1;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-  opacity: 0
 }
 
 .insta-list li a:hover:before {
@@ -6916,7 +6881,7 @@ blockquote:before {
   }
 
   .relative-posts .meta span {
-    
+
     display: inline;
     margin-right: 20px
   }

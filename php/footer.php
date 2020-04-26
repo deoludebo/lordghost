@@ -2,10 +2,10 @@
 	include 'php/config.php';
 
 	$conn = new mysqli($servername, $username, $password, $db_name);
-	$result = $conn -> query("SELECT * FROM gallery WHERE type=1 ORDER BY date DESC LIMIT 6");
-	$gallery_table = "";
+	$result = $conn -> query("SELECT * FROM states");
+	$states_table = "";
 	while($row = $result -> fetch_assoc()) {
-		$gallery_table .= '<li><img class="lazy" src="' . $row["src"] . '" alt="social"></li>';
+		$states_table .= '<li><a href="states.php?state=' . $row["id"] . '"><img class="lazy" src="' . $row["image"] . '" alt="state"></a></li>';
 	}
 
 	$conn->close();
@@ -15,7 +15,7 @@
 <footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-md-4">
+				<div class="col-lg-3">
 					<a href="index.php" class="logo-footer">
 						<img src="assets/img/pdp.png" alt="logo" style="width: 100% !important">
 					</a>
@@ -27,7 +27,7 @@
 						<li><a target="_blank" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
 					</ul>
 				</div>
-				<div class="col-12 col-sm-6 col-md-4">
+				<div class="col-lg-3">
 					<h6>Contacts</h6>
 					<ul class="footer-contacts">
 						<li>
@@ -44,10 +44,10 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-12 col-sm-6 col-md-4 insta-list-cover">
-					<h6>Gallery</h6>
+				<div class="col-lg-6 insta-list-cover">
+					<h6>States</h6>
 					<ul class="insta-list">
-						<?php echo $gallery_table; ?>
+						<?php echo $states_table; ?>
 					</ul>
 				</div>
 			</div>
