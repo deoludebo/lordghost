@@ -47,22 +47,21 @@
       $stmt->bind_param("ssssssssi", $empty, $title, $intro, $full_info, $poster, $tag, $featured, $type, $date);
       $stmt->execute();
       $id = "" . $conn->insert_id;
-
-      echo "<script>window.location='edit-news.php?id=" . $id . "';</script>";
-      exit;
     }
 
-    $target_dir = "../assets/img/uploads/events/";
+    $target_dir = "../assets/img/uploads/news/";
     $target_file = $target_dir . basename($_FILES["picture"]["name"]);
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
     $check = getimagesize($_FILES["picture"]["tmp_name"]);
     if($check !== false) {
       move_uploaded_file($_FILES["picture"]["tmp_name"], $target_file);
-      $stmt = $conn->prepare("UPDATE events SET image=? WHERE id=?");
-      $picture_location = "assets/img/uploads/events/" . basename($_FILES["picture"]["name"]);
+      $stmt = $conn->prepare("UPDATE news SET image=? WHERE id=?");
+      $picture_location = "assets/img/uploads/news/" . basename($_FILES["picture"]["name"]);
       $stmt->bind_param("ss", $picture_location, $id);
       $stmt->execute();
     }
+    echo "<script>window.location='edit-news.php?id=" . $id . "';</script>";
+    exit;
   }
 
   $title = "";

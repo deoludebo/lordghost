@@ -35,8 +35,7 @@
       $stmt->execute();
       $id = "" . $conn->insert_id;
 
-      echo "<script>window.location='edit-state.php?id=" . $id . "';</script>";
-      exit;
+
     }
 
     $target_dir = "../assets/img/uploads/states/";
@@ -50,6 +49,8 @@
       $stmt->bind_param("ss", $picture_location, $id);
       $stmt->execute();
     }
+    echo "<script>window.location='edit-state.php?id=" . $id . "';</script>";
+    exit;
   }
 
   $name = "";

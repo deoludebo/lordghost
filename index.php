@@ -47,7 +47,7 @@
   while($row = $result -> fetch_assoc()) {
     $news_sidebar .= '<li>
       <div class="item-thumbnail">
-        <a href="news.php?news=' . $row["id"] . '" target="_blank"> <img alt="' . $row["title"] . '" class="circle" src="' . $row["image"] . '" title="' . $row["title"] . '" border="0" width="72"> </a> <span class="title"><a title=" " href="href="news.php?news=' . $row["id"] . '">' . $row["title"] . '</a></span> </div>
+        <a href="news.php?news=' . $row["id"] . '" target="_blank"> <img alt="' . $row["title"] . '" class="circle" src="' . $row["image"] . '" title="' . $row["title"] . '" border="0" width="72"> </a> <span class="title"><a href="news.php?news=' . $row["id"] . '" target="_blank">' . $row["title"] . '</a></span> </div>
       <div style="clear: both;"></div>
     </li>';
   }

@@ -42,8 +42,6 @@
       $stmt->execute();
       $id = "" . $conn->insert_id;
 
-      echo "<script>window.location='edit-governors.php?id=" . $id . "';</script>";
-      exit;
     }
 
     $target_dir = "../assets/img/uploads/";
@@ -57,6 +55,8 @@
       $stmt->bind_param("ss", $picture_location, $id);
       $stmt->execute();
     }
+    echo "<script>window.location='edit-governors.php?id=" . $id . "';</script>";
+    exit;
   }
 
   $name = "";

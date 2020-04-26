@@ -32,7 +32,7 @@
 					<ul class="footer-contacts">
 						<li>
 							<i class="fas fa-map-marker-alt"></i>
-							<a href="contacts.html">Legacy House, Plot 2774, Shehu Shagari Way, Maitama, Abuja
+							<a href="#">Legacy House, Plot 2774, Shehu Shagari Way, Maitama, Abuja
 						</li>
 						<li>
 							<i class="fa fa-phone" aria-hidden="true"></i>

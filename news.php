@@ -66,7 +66,6 @@
   else {
     $result = $conn -> query("SELECT * FROM news ORDER BY date DESC");
     $news_table = "";
-    $news_side = "";
     while($row = $result -> fetch_assoc()) {
       $date = date("Y-m-d", $row["date"]);
       $date2 = date("h:i a", $row["date"]);
@@ -90,11 +89,6 @@
           </div>
         </div>
       </div>';
-
-      $news_side .= '<li>
-        <a href="news.php?news=' . $row["id"] . '">' . $row["title"] . '</a>
-        <div class="date"><i class="fas fa-calendar-alt" aria-hidden="true"></i>' . $date . ' at ' . $date2 . '</div>
-      </li>';
     }
   }
 
@@ -104,6 +98,17 @@
     $date = date("Y-m-d", $row["date"]);
     $date2 = date("h:i a", $row["date"]);
     $news_featured .= '<li>
+      <a href="news.php?news=' . $row["id"] . '">' . $row["title"] . '</a>
+      <div class="date"><i class="fas fa-calendar-alt" aria-hidden="true"></i>' . $date . ' at ' . $date2 . '</div>
+    </li>';
+  }
+
+  $result = $conn -> query("SELECT * FROM news ORDER BY date DESC LIMIT 5");
+  $news_side = "";
+  while($row = $result -> fetch_assoc()) {
+    $date = date("Y-m-d", $row["date"]);
+    $date2 = date("h:i a", $row["date"]);
+    $news_side .= '<li>
       <a href="news.php?news=' . $row["id"] . '">' . $row["title"] . '</a>
       <div class="date"><i class="fas fa-calendar-alt" aria-hidden="true"></i>' . $date . ' at ' . $date2 . '</div>
     </li>';

@@ -36,9 +36,6 @@
       $stmt->bind_param("ssssis", $title, $type, $venue, $state, $date, $empty);
       $stmt->execute();
       $id = "" . $conn->insert_id;
-
-      echo "<script>window.location='edit-event.php?id=" . $id . "';</script>";
-      exit;
     }
 
     $target_dir = "../assets/img/uploads/events/";
@@ -52,6 +49,8 @@
       $stmt->bind_param("ss", $picture_location, $id);
       $stmt->execute();
     }
+    echo "<script>window.location='edit-event.php?id=" . $id . "';</script>";
+    exit;
   }
 
   $title = "";
