@@ -47,13 +47,14 @@
   while($row = $result -> fetch_assoc()) {
     $news_sidebar .= '<li>
       <div class="item-thumbnail">
-        <a href="news.php?news=' . $row["id"] . '" target="_blank"> <img alt="' . $row["title"] . '" class="circle" src="' . $row["image"] . '" title="' . $row["title"] . '" border="0" width="72"> </a> <span class="title"><a title=" " href="href="news.php?news=' . $row["id"] . '">' . $row["title"] . '</a></span> </div>
+        <a href="news.php?news=' . $row["id"] . '" target="_blank"> <img alt="' . $row["title"] . '" class="circle" src="' . $row["image"] . '" title="' . $row["title"] . '" border="0" width="72"> </a> <span class="title"><a href="news.php?news=' . $row["id"] . '">' . $row["title"] . '</a></span> </div>
       <div style="clear: both;"></div>
     </li>';
   }
 
   $result = $conn -> query("SELECT * FROM news ORDER BY date DESC LIMIT 10");
   $news_table = "";
+  $news_slider = "";
   while($row = $result -> fetch_assoc()) {
     $date = date("Y-m-d", $row["date"]);
     $news_table .= '<div class="speaker-item">
@@ -70,6 +71,18 @@
           </div>
       </div>
 	</div>';
+    $news_slider .= '<div class="main-slide-two">
+      <div class="main-slider-bg" style="background-image: url(' . $row["image"] . ');"></div>
+      <div class="container">
+        <div class="main-slide-item">
+          <div class="date-slide">' . $date . '</div>
+          <h2>' . $row["title"] . '</h2>
+          <div class="slide-btn-cover">
+            <a href="news.php?id=' . $row["id"] . '" class="btn btn-yellow">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>';
 
   }
 
@@ -81,54 +94,9 @@
 	<div class="row justify-content-center">
 	<div class="col-lg-8">
 		<div class="main-slider-two">
-			<div class="main-slide-two">
-				<div class="main-slide-date">January 17</div>
-				<div class="main-slider-bg" style="background-image: url(assets/img/bg-slider-home2.svg);"></div>
-				<img class="img-slide" src="assets/img/home-2-slide-1.png" alt="img">
-				<div class="container">
-					<div class="main-slide-item">
-						<div class="date-slide">January 17, 2019 / Washington DC</div>
-						<h2><span>Conference on Software</span>Engineering Practices</h2>
-						<div class="slide-tag">#Web_Conference</div>
-						<div class="slide-btn-cover">
-							<a href="single-events.html" class="btn btn-yellow">register now</a>
-							<a href="single-events.html" class="btn btn-border">more details</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="main-slide-two">
-				<div class="main-slide-date">January 17</div>
-				<div class="main-slider-bg" style="background-image: url(assets/img/bg-slider-home2.svg);"></div>
-				<img class="img-slide" src="assets/img/home-2-slide-2.png" alt="img">
-				<div class="container">
-					<div class="main-slide-item">
-						<div class="date-slide">January 17, 2019 / Washington DC</div>
-						<h2><span>Technology in</span>The Banking Sector</h2>
-						<div class="slide-tag">#Web_Conference</div>
-						<div class="slide-btn-cover">
-							<a href="single-events.html" class="btn btn-yellow">register now</a>
-							<a href="single-events.html" class="btn btn-border">more details</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="main-slide-two">
-				<div class="main-slide-date">January 17</div>
-				<div class="main-slider-bg" style="background-image: url(assets/img/bg-slider-home2.svg);"></div>
-				<img class="img-slide" src="assets/img/home-2-slide-3.png" alt="img">
-				<div class="container">
-					<div class="main-slide-item">
-						<div class="date-slide">January 17, 2019 / Washington DC</div>
-						<h2><span>Ultimate Skills For an</span>Start in IT Recruiting</h2>
-						<div class="slide-tag">#Web_Conference</div>
-						<div class="slide-btn-cover">
-							<a href="single-events.html" class="btn btn-yellow">register now</a>
-							<a href="single-events.html" class="btn btn-border">more details</a>
-						</div>
-					</div>
-				</div>
-			</div>
+			<?php
+        echo $news_slider;
+      ?>
 		</div>
 </div>
 <div class="col-lg-4">
@@ -139,9 +107,7 @@
     ?>
   </ul>
 </div>
-<div>
-<a href="news.php"><h2 class="title-line-left color:green;">FEATURED POSTS</h2></a>
-				</div>
+
 </div>
 	</section>
 

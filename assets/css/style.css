@@ -4361,10 +4361,6 @@ blockquote:before {
   width: 100%;
   height: 96px;
   z-index: 5;
-  background-image: url(../img/before-home-2.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom center
 }
 
 .main-arrow-cover {
