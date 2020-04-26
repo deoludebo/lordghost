@@ -2187,7 +2187,6 @@ footer h6 {
   object-fit: cover;
   -o-object-position: top center;
   object-position: top center;
-  height: 270px;
   border-radius: 5px;
   -webkit-transition: .4s ease;
   transition: .4s ease

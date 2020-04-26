@@ -23,25 +23,154 @@
   <div class="our-team-bg" style="background-image: url(assets/img/bg-team-about.svg);"></div>
   <div class="container">
     <h2 class="title-line">Our Partners</h2>
+    <p class="slogan" style="max-width:80%">One of the objectives of the 2009 re-structuring of the Nigeria Governors’ Forum Secretariat was the imperative to forge strategic partnerships with relevant partners both within and outside the country. At the international front, the Forum interfaces with the National Governors’ Association in the United States, International Development Partners such as</p>
     <div class="row team-cover" style="margin-top: 30px">
       <div class="col-6 col-sm-3 team-item">
         <a href="#" class="team-img">
-          <img src="assets/img/ms-icon-310x310.png" alt="partner">
+          <img src="assets/img/partners/1.jpg" alt="partner">
         </a>
       </div>
       <div class="col-6 col-sm-3 team-item">
         <a href="#" class="team-img">
-          <img src="assets/img/ms-icon-310x310.png" alt="partner">
+          <img src="assets/img/partners/2.jpg" alt="partner">
         </a>
       </div>
       <div class="col-6 col-sm-3 team-item">
         <a href="#" class="team-img">
-          <img src="assets/img/ms-icon-310x310.png" alt="partner">
+          <img src="assets/img/partners/3.jpg" alt="partner">
         </a>
       </div>
       <div class="col-6 col-sm-3 team-item">
         <a href="#" class="team-img">
-          <img src="assets/img/ms-icon-310x310.png" alt="partner">
+          <img src="assets/img/partners/4.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/5.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/6.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/7.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/8.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/9.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/10.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/11.jpg" alt="partner">
+        </a>
+      </div>
+    </div>
+    <p class="slogan" style="max-width:80%">Locally, the Forum through its Secretariat partners with Ministries, Departments & Agencies (MDAs) which include</p>
+    <div class="row team-cover" style="margin-top: 30px">
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/12.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/13.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/14.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/15.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/16.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/17.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/18.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/18.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/19.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/20.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/21.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/22.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/23.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/24.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/25.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/26.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/27.jpg" alt="partner">
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 team-item">
+        <a href="#" class="team-img">
+          <img src="assets/img/partners/28.jpg" alt="partner">
         </a>
       </div>
     </div>
