@@ -13,3 +13,5 @@
 * [x] added chairman page
 
 * [x] added vice chairman page
+
+* [x] added partners
