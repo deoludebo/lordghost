@@ -19,7 +19,7 @@
       $stmt->execute();
 
       $stmt = $conn->prepare("INSERT INTO login_session (login_id, username) VALUES (?, ?)");
-      $stmt->bind_param("is", $id, $login_username);
+      $stmt->bind_param("ss", $id, $login_username);
       $stmt->execute();
 
       setcookie("u_id", $id, time() + (60 * 60 * 24), "/");

@@ -114,6 +114,7 @@ var simplemaps_countrymap_mapdata={
     },
     NGA2848: {
       name: "Taraba",
+      url: "states.php?state=15",
       color: "#07923c",
       hover_color: "#07923c"
     },
@@ -149,6 +150,7 @@ var simplemaps_countrymap_mapdata={
     },
     NGA2858: {
       name: "Bauchi",
+      url: "states.php?state=14",
       color: "#07923c",
       hover_color: "#07923c"
     },
@@ -199,11 +201,13 @@ var simplemaps_countrymap_mapdata={
     },
     NGA2871: {
       name: "Sokoto",
+      url: "states.php?state=12",
       color: "#07923c",
       hover_color: "#07923c"
     },
     NGA2872: {
       name: "Zamfara",
+      url: "states.php?state=16",
       color: "#07923c",
       hover_color: "#07923c"
     },
@@ -215,6 +219,7 @@ var simplemaps_countrymap_mapdata={
     },
     NGA2881: {
       name: "Adamawa",
+      url: "states.php?state=13",
       color: "#07923c",
       hover_color: "#07923c"
     },
