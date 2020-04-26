@@ -17,3 +17,5 @@
 * [x] added partners
 
 * [x] added state logos
+
+* [x] added secretariat
