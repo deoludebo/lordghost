@@ -116,7 +116,7 @@
 			speed: 800,
 			cssEase: 'ease-in-out',
 			autoplay: true,
-			autoplaySpeed: 4500,
+			autoplaySpeed: 1500,
 			nextArrow: '<span class="slick-arrow-next"><i class="fa fa-caret-right" aria-hidden="true"></i></span>',
 			prevArrow: '<span class="slick-arrow-prev"><i class="fa fa-caret-left" aria-hidden="true"></i></span>'
 		})

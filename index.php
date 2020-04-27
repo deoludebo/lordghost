@@ -44,25 +44,21 @@
   // $result = $conn -> query("SELECT * FROM news WHERE featured=1 ORDER BY date DESC LIMIT 6");
   $result = $conn -> query("SELECT * FROM news ORDER BY date DESC LIMIT 6");
   $news_sidebar = "";
+  $news_table = "";
+  $news_slider = "";
   while($row = $result -> fetch_assoc()) {
+    $date = date("Y-m-d", $row["date"]);
     $news_sidebar .= '<li>
       <div class="item-thumbnail">
         <a href="news.php?news=' . $row["id"] . '" target="_blank"> <img alt="' . $row["title"] . '" class="circle" src="' . $row["image"] . '" title="' . $row["title"] . '" border="0" width="72"> </a> <span class="title"><a href="news.php?news=' . $row["id"] . '">' . $row["title"] . '</a></span> </div>
       <div style="clear: both;"></div>
     </li>';
-  }
-
-  $result = $conn -> query("SELECT * FROM news ORDER BY date DESC LIMIT 10");
-  $news_table = "";
-  $news_slider = "";
-  while($row = $result -> fetch_assoc()) {
-    $date = date("Y-m-d", $row["date"]);
     $news_table .= '<div class="speaker-item">
       <div class="speaker-item-img">
-        <a href="news.php?id=' . $row["id"] . '"><img class="lazy" src="' . $row["image"] . '" alt="img" style="display: block;"></a>
+        <a href="news.php?news=' . $row["id"] . '"><img class="lazy" src="' . $row["image"] . '" alt="img" style="display: block;"></a>
       </div>
       <div class="speaker-item-content post-item-cover">
-        <a href="news.php?id=' . $row["id"] . '"><h3 class="text-green">' . $row["title"] . '</h3></a>
+        <a href="news.php?news=' . $row["id"] . '"><h3 class="text-green">' . $row["title"] . '</h3></a>
         <p>' . $row["intro"] . '</p>
         <div class="meta">
             <span class="post-by"><i class="fa fa-user" aria-hidden="true"></i>By <a href="#">' . $row["poster"] . '</a></span>
@@ -75,15 +71,14 @@
       <div class="main-slider-bg" style="background-image: url(' . $row["image"] . ');"></div>
       <div class="container">
         <div class="main-slide-item">
-          <div class="date-slide">' . $date . '</div>
-          <h2>' . $row["title"] . '</h2>
+          <div style="background-color: black"><h5 style="color: white; margin-top: 150px">' . $date . '</h5>
+          <h3 style="color: white;">' . $row["title"] . '</h3></div>
           <div class="slide-btn-cover">
-            <a href="news.php?id=' . $row["id"] . '" class="btn btn-yellow">Read More</a>
+            <a href="news.php?news=' . $row["id"] . '" class="btn btn-yellow">Read More</a>
           </div>
         </div>
       </div>
     </div>';
-
   }
 
   $conn->close();
